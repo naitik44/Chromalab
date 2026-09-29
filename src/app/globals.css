@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-container: #dbeafe;
+  --color-on-error-container: #7f1d1d;
+  --color-on-secondary-container: #312e81;
+  --color-surface-container-high: #e5e7eb;
+  --color-on-primary-container: #1e3a8a;
+  --color-error: #dc2626;
+  --color-surface-tint: #3b82f6;
+  --color-error-container: #fee2e2;
+  --color-on-tertiary-fixed-variant: #064e3b;
+  --color-tertiary-fixed-dim: #10b981;
+  --color-on-tertiary-container: #022c22;
+  --color-surface-dim: #f9fafb;
+  --color-surface-container: #f3f4f6;
+  --color-tertiary-container: #d1fae5;
+  --color-on-surface-variant: #4b5563;
+  --color-on-primary-fixed-variant: #1d4ed8;
+  --color-on-secondary-fixed: #312e81;
+  --color-on-error: #ffffff;
+  --color-inverse-surface: #111827;
+  --color-on-tertiary: #ffffff;
+  --color-on-primary: #ffffff;
+  --color-primary: #2563eb;
+  --color-secondary-fixed: #e0e7ff;
+  --color-secondary: #4f46e5;
+  --color-surface-container-low: #ffffff;
+  --color-inverse-on-surface: #f9fafb;
+  --color-primary-fixed: #dbeafe;
+  --color-inverse-primary: #60a5fa;
+  --color-on-surface: #111827;
+  --color-tertiary-fixed: #34d399;
+  --color-primary-fixed-dim: #3b82f6;
+  --color-on-secondary: #ffffff;
+  --color-surface-container-highest: #d1d5db;
+  --color-on-primary-fixed: #1e3a8a;
+  --color-surface-container-lowest: #ffffff;
+  --color-outline: #e5e7eb;
+  --color-surface: #ffffff;
+  --color-on-secondary-fixed-variant: #4338ca;
+  --color-background: #f9fafb;
+  --color-on-tertiary-fixed: #064e3b;
+  --color-on-background: #111827;
+  --color-surface-variant: #f3f4f6;
+  --color-outline-variant: #f9fafb;
+  --color-surface-bright: #ffffff;
+  --color-secondary-container: #e0e7ff;
+  --color-secondary-fixed-dim: #6366f1;
+  --color-tertiary: #059669;
+
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-margin-sm: 1rem;
+  --spacing-gutter: 1.5rem;
+  --spacing-gutter-sm: 1rem;
+  --spacing-margin: 2rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-xl: 2.5rem;
+
+  --font-body-lg: "Inter", sans-serif;
+  --font-headline-xl: "Plus Jakarta Sans", sans-serif;
+  --font-body-sm: "Inter", sans-serif;
+  --font-headline-lg: "Plus Jakarta Sans", sans-serif;
+  --font-headline-lg-mobile: "Plus Jakarta Sans", sans-serif;
+  --font-label-sm: "Inter", sans-serif;
+  --font-body-md: "Inter", sans-serif;
+  --font-label-md: "Inter", sans-serif;
+  --font-headline-sm: "Plus Jakarta Sans", sans-serif;
+  --font-headline-md: "Plus Jakarta Sans", sans-serif;
+  --font-headline-xl-mobile: "Plus Jakarta Sans", sans-serif;
+  --font-label-lg: "Inter", sans-serif;
+
+  --text-body-lg: 16px;
+  --text-body-lg--line-height: 26px;
+  --text-body-lg--font-weight: 400;
+
+  --text-headline-xl: 48px;
+  --text-headline-xl--line-height: 56px;
+  --text-headline-xl--font-weight: 800;
+
+  --text-body-sm: 12px;
+  --text-body-sm--line-height: 18px;
+  --text-body-sm--font-weight: 400;
+
+  --text-headline-lg: 36px;
+  --text-headline-lg--line-height: 44px;
+  --text-headline-lg--font-weight: 700;
+
+  --text-headline-lg-mobile: 26px;
+  --text-headline-lg-mobile--line-height: 34px;
+  --text-headline-lg-mobile--font-weight: 700;
+
+  --text-label-sm: 11px;
+  --text-label-sm--line-height: 14px;
+  --text-label-sm--font-weight: 600;
+
+  --text-body-md: 14px;
+  --text-body-md--line-height: 22px;
+  --text-body-md--font-weight: 400;
+
+  --text-label-md: 12px;
+  --text-label-md--line-height: 16px;
+  --text-label-md--font-weight: 500;
+
+  --text-headline-sm: 20px;
+  --text-headline-sm--line-height: 28px;
+  --text-headline-sm--font-weight: 600;
+
+  --text-headline-md: 24px;
+  --text-headline-md--line-height: 32px;
+  --text-headline-md--font-weight: 600;
+
+  --text-headline-xl-mobile: 32px;
+  --text-headline-xl-mobile--line-height: 40px;
+  --text-headline-xl-mobile--font-weight: 800;
+
+  --text-label-lg: 14px;
+  --text-label-lg--line-height: 20px;
+  --text-label-lg--font-weight: 500;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    overscroll-behavior: none;
+    background-color: var(--color-background);
+    color: var(--color-on-surface);
+  }
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
